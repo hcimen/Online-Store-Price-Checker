@@ -1,14 +1,18 @@
 let itemName = prompt("Enter name of item");
 let basePrice = Number(prompt("What is base price for item?"));
+
 let blackFriday = prompt("Black Friday? Answer yes or no");
 let bFmessageYes = "Since it's Black Friday, we will reduce the price by 25%.";
 let bFmessageNo = "It's not Black Friday, so the price didn't change for that. "
+
 let sEngine = prompt("Did the purchaser find the product through a search engine? Answer yes or no.")
 let sEngineYes = "We will increase the price by 1% to pay the search engine. ";
 let sEngineNo = "The customer didn't use a search engine, so the price didn't change for that. "
+
 let pComparison = prompt("Did the purchaser visit a comparison-shopping site? Answer yes or no.")
 let pComparisonYes = "Since the customer visited a comparison-shopping site, we will reduce the price by 10%. "
 let pComparisonNo = "The customer didn't visit a comparison-shopping site, so the price didn't change for that. "
+
 let message = ""
 
 if(blackFriday == "yes" || blackFriday =="Yes" || blackFriday ==1 || blackFriday == "y" && "Y" ) {
