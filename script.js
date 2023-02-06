@@ -11,6 +11,10 @@ let pComparisonYes = "Since the customer visited a comparison-shopping site, we 
 let pComparisonNo = "The customer didn't visit a comparison-shopping site, so the price didn't change for that. "
 let message = ""
 
+if (typeof(basePrice) != Number) {
+    prompt("Last chance to enter number value" + "\n" + "What is base price for item?");
+}
+
 if(blackFriday == "yes" || blackFriday =="Yes" || blackFriday ==1 || blackFriday == "y" && "Y" ) {
     console.log(message += "\n" + bFmessageYes);
     console.log(basePrice *= 0.75);
@@ -53,4 +57,4 @@ if(pComparison == "yes" || pComparison =="Yes" || pComparison ==1|| pComparison 
 
    console.log("Order summary" + "\n" + "Item name is: " + itemName + "\n" + "Price of item is: " + basePrice.toFixed(2) + "\n" + "Reason for price change is: " + message )
 
-   alert("Item name is: " + itemName + "\n" + "Price of item is: " + basePrice.toFixed(2) + "\n" + "Reason for price change is: " + message )
+   alert("Item name is: " + itemName + "\n" + "Price of item is: " + basePrice.toFixed(2) + "\n" + "Reason for price change is: " + message)
